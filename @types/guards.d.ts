@@ -1,0 +1,37 @@
+import { AnyFunction } from 'tsdef';
+declare function isObject(obj: unknown): obj is Object;
+declare function isFunctionStrict<T extends AnyFunction>(obj: unknown): obj is T;
+declare function isGeneratorFunction<T extends AnyFunction>(obj: unknown): obj is T;
+declare function isAsyncFunction<T extends (...args: any[]) => Promise<any>>(obj: unknown): obj is T;
+declare function isAnyFunction<T extends AnyFunction>(obj: unknown): obj is T;
+declare function isUndefined(obj: unknown): obj is undefined;
+declare function isNull(obj: unknown): obj is null;
+declare function isString(obj: unknown): obj is string;
+declare function isNumber(obj: unknown): obj is number;
+declare function isBoolean(obj: unknown): obj is boolean;
+declare function isDate(obj: unknown): obj is Date;
+declare function isRegExp(obj: unknown): obj is RegExp;
+declare function isArray<T extends any = unknown>(obj: readonly T[] | unknown): obj is T[];
+declare type IsMethod = (value: unknown) => boolean;
+declare type AtLeastOne<T> = [T, ...T[]];
+declare const is: {
+    Function: typeof isFunctionStrict & {
+        Any: typeof isAnyFunction;
+        Async: typeof isAsyncFunction;
+        Generator: typeof isGeneratorFunction;
+    };
+    AsyncFunction: typeof isAsyncFunction;
+    GeneratorFunction: typeof isGeneratorFunction;
+    Undefined: typeof isUndefined;
+    Null: typeof isNull;
+    Boolean: typeof isBoolean;
+    Object: typeof isObject;
+    String: typeof isString;
+    Number: typeof isNumber;
+    Date: typeof isDate;
+    RegExp: typeof isRegExp;
+    Array: typeof isArray;
+    Maybe: <IS_FN extends IsMethod>(fn: IS_FN) => (value: unknown) => boolean;
+    OneOf: <IS_FNS extends IsMethod[] = AtLeastOne<IsMethod>>(...fns: IS_FNS) => (value: unknown) => boolean;
+};
+export = is;
