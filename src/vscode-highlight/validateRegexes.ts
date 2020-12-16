@@ -1,2 +1,2 @@
-import FlatRegexCaptureCheck from '../FlatRegexpCaptureCheck'
+import FlatRegexCaptureCheck from '../FlatRegexCaptureCheck'
 

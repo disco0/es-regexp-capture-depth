@@ -100,7 +100,7 @@ export class TestRegexSets extends Array<TestRegexSet>
             results.push(setResult);
 
             console.log(c.blue`Set results:`)
-            console.dir(setResult, {depth: 3, colors: true, compact: true, breakLength: true})
+            console.dir(setResult, {depth: 3, colors: true, compact: true, breakLength: 80})
         }
 
         return results;

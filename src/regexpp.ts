@@ -3,7 +3,7 @@
 // Node
 import c from 'chalk'
 
-import { FlatRegexCaptureCheck } from './FlatRegexpCaptureCheck'
+import { FlatRegexCaptureCheck } from './FlatRegexCaptureCheck'
 
 //#endregion Imports
 

@@ -4,7 +4,7 @@
         // "outDir": "../dist",
         "resolveJsonModule": true,
         "rootDir": ".",
-        "tsBuildInfoFile": ".src.tsbuildinfo"
+        "tsBuildInfoFile": "../.tsbuildinfo/.src.tsbuildinfo"
         
         // "strictBindCallApply": true,
         // "noImplicitThis": true,

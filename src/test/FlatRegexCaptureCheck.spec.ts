@@ -11,7 +11,7 @@ import AVA from 'ava';
 import * as $AVA from 'ava';
 
 import Tests, { TestRegexInfo, TestInfoEntry } from '../testRegexes';
-import { FlatRegexCaptureCheck } from '../FlatRegexpCaptureCheck'
+import { FlatRegexCaptureCheck } from '../FlatRegexCaptureCheck'
 import { trimRegExpSource } from './commonUtils'
 
 //#endregion Imports

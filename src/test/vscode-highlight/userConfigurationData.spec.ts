@@ -7,7 +7,7 @@ import AVA from 'ava'
 import type * as $AVA from 'ava'
 
 import UserRegexes from '../../vscode-highlight/userConfigurationData';
-import { FlatRegexCaptureCheck } from '../../FlatRegexpCaptureCheck'
+import { FlatRegexCaptureCheck } from '../../FlatRegexCaptureCheck'
 import { trimRegExpSource } from '../../test/commonUtils'
 
 //#endregion Imports

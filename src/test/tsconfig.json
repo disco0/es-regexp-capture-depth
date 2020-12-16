@@ -7,7 +7,7 @@
     ],
     "compilerOptions": 
     {
-        "tsBuildInfoFile": ".test.tsbuildinfo",
+        "tsBuildInfoFile": "../../.tsbuildinfo/.test.tsbuildinfo",
         
         "baseUrl": ".",
         "rootDir": ".",

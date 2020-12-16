@@ -1,6 +1,4 @@
-///<reference path="./globals.d.ts"/>
-
-import { FlatRegexCaptureCheck } from './FlatRegexpCaptureCheck'
+import { FlatRegexCaptureCheck } from './FlatRegexCaptureCheck'
 export { FlatRegexCaptureCheck }
 
 export default FlatRegexCaptureCheck;
