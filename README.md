@@ -13,6 +13,35 @@ Beyond failing at compilation, it would be good to know if the pattern:
 
 As of writing the first two checks have been implemented with zero false positives in my `vscode-highlight` regexes (and actually caught one problem previously unnoticed).
 
+Implementation duct taped on top of the wonderful [regexpp](https://github.com/mysticatea/regexpp) package.
+
 ## \> *non-significant* capture group
 
 This is basically a noop capture group, `()`—this is useful with `vscode-highlight` to place full line decorations.
+
+--------
+
+# Module
+
+(Check `@types/index.d.ts` for up-to-date module shape.)
+
+Package exports a single Promise based validation utility class, `FlatRegexCaptureCheck`:
+
+``` ts
+class FlatRegexCaptureCheck 
+{
+    /** 
+     * Set via `immediate` parameter in constructor, if true `checkFlat` called immediately.
+     */
+    immediate: boolean;
+    regex: RegExp;
+
+    constructor(public regexp: RegExp);
+    constructor(public regexp: RegExp, public immediate: boolean);
+
+
+    checkFlat():  Promise<boolean>;
+    /** Getter for (existing) checkFlat result */
+    get result(): Promise<boolean>;
+}
+```
