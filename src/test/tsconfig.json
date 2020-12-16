@@ -1,0 +1,16 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "include": [".", "../globals.d.ts"],
+    "references":
+    [
+        { "path": "../tsconfig.json" }
+    ],
+    "compilerOptions": 
+    {
+        "tsBuildInfoFile": ".test.tsbuildinfo",
+        
+        "baseUrl": ".",
+        "rootDir": ".",
+        "typeRoots": ["../../node_modules/@types"]
+    }
+}

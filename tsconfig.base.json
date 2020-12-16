@@ -1,0 +1,67 @@
+{
+    "extends": "@tsconfig/node14/tsconfig.json",
+    "compilerOptions": 
+    {
+        "outDir": "dist",
+        "typeRoots": ["./node_modules/@types"],
+        "moduleResolution": "Node",
+
+        "strictBindCallApply": true,
+        "noImplicitThis": true,
+
+        "removeComments": true,
+
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        "sourceMap": true,
+        "declaration": true,
+        "composite": true,
+        "declarationDir": "./@types",
+
+        "resolveJsonModule": true,
+
+        "listEmittedFiles": true,
+        "pretty": true,
+        "preserveWatchOutput": true
+    },
+    "ts-node":
+    {
+        "files": true,
+        "preferTsExts": true,
+        "transpileOnly": true,
+        "logError": true,
+
+        "compilerOptions": 
+        {
+            "outDir": "dist",
+            "typeRoots": ["./node_modules/@types"],
+            "moduleResolution": "Node",
+
+            "strictBindCallApply": true,
+            "noImplicitThis": true,
+
+            "removeComments": true,
+
+            "esModuleInterop": true,
+            "downlevelIteration": true,
+
+            "experimentalDecorators": true,
+            "emitDecoratorMetadata": true,
+
+            "sourceMap": true,
+            "declaration": true,
+            "composite": true,
+            "declarationDir": "./@types",
+
+            "resolveJsonModule": true,
+
+            "listEmittedFiles": true,
+            "pretty": true,
+            "preserveWatchOutput": true
+        }
+    }
+}

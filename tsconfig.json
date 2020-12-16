@@ -1,0 +1,10 @@
+{
+    "include": [],
+    "exclude": [],
+    "references": 
+    [
+        {"path": "./src/tsconfig.json"},
+        {"path": "./src/test/tsconfig.json"},
+        {"path": "./src/vscode-highlight/test/tsconfig.json"}
+    ]
+}

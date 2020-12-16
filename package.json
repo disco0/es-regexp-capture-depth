@@ -1,0 +1,49 @@
+{
+  "name": "regexp-capture-analysis",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env TS_NODE_PROJECT=\"./src/test/tsconfig.json\" ava src/test/**/*.spec.ts",
+    "ts-node-base": "cross-env TS_NODE_PROJECT=\"src/tsconfig.json\" node --harmony-regexp-match-indices -r $(npm -g root)/ts-node/register",
+    "test:inspectGroups": "yarn run ts-node-base src/inspectGroups.test.ts",
+    "test:ast": "yarn run ts-node-base src/ast.test.ts",
+    "build": "tsc -b ./tsconfig.json",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --fix --ext .ts",
+    "start:debug": "ts-node-dev --inspect=0.0.0.0:9229 src/index.ts",
+    "start": "node dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "ava": {
+    "typescript": {
+      "extensions": [
+        "ts"
+      ],
+      "rewritePaths": {}
+    },
+    "require": [
+      "ts-node/register",
+      "tsconfig-paths/register"
+    ]
+  },
+  "devDependencies": {
+    "@ava/typescript": "^1.1.1",
+    "@tsconfig/node14": "^1.0.0",
+    "@types/node": "^14.14.12",
+    "ava": "^3.14.0",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "tsdef": "^0.0.14",
+    "typescript": "^4.2.0-dev.20201211"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "jsonc-parser": "^3.0.0",
+    "regexp-match-indices": "^1.0.2",
+    "regexp-to-ast": "github:/disco0/regexp-to-ast#master",
+    "regexpp": "^3.1.0"
+  }
+}
