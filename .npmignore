@@ -1,2 +1,5 @@
 node_modules/
-dist/
+
+# Untangle this later
+dist/vscode-highlight/*
+dist/test*.js*
