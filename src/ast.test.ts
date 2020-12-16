@@ -13,7 +13,7 @@ import {
     Return
 } from 'tsdef'
 
-import is from '../guards';
+import is from './guards';
 
 //#endregion Imports
 
