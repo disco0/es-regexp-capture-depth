@@ -1,0 +1,1929 @@
+{
+    "highlight.regexes": {
+        "^(?:(// +)(?:(@noframes)([ \\t]*$)|(@(?:include|match|grant|require))([\\t ]+)(?:(https?.+?)|(.+))(\\**)([ \\t]*)|(^//[ \\t]+)(@(?:author|name(?:space)?|version|description))([ \\t]+)(.+?)([ \\t]*)|(^//[ \\t]+)(@resource)([ \\t]+)(\\S+)([ \\t]+)(\\S+)([ \\t]*))(\\n(?://[ \\t]*\\n)*))": {
+            "filterLanguageRegex": "(java|type)script",
+            "regexFlags": "gm",
+            "decorations": [
+                {},
+                {
+                    "fontWeight": "600",
+                    "color": "#BB0034",
+                    "fontStyle": "oblique"
+                },
+                {},
+                {
+                    "color": "#BB0034",
+                    "fontStyle": "oblique"
+                },
+                {},
+                {
+                    "textDecoration": "underline",
+                    "color": "#0000FF"
+                },
+                {
+                    "color": "#0044CC",
+                    "fontWeight": "600"
+                },
+                {
+                    "textDecoration": "underline #0000FF",
+                    "color": "#DD55AA",
+                    "fontWeight": "600"
+                },
+                {},
+                {},
+                {
+                    "color": "#0044CC",
+                    "fontStyle": "oblique"
+                },
+                {},
+                {
+                    "color": "#0055AA",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#DD55AA",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "color": "#0044CC",
+                    "fontStyle": "oblique"
+                },
+                {},
+                {
+                    "color": "#BB0034",
+                    "fontStyle": "oblique",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "textDecoration": "underline",
+                    "color": "#0000FF"
+                },
+                {
+                    "color": "#DD55AA",
+                    "fontWeight": "600"
+                },
+                {}
+            ]
+        },
+        "(@param+)([ \\t]+\\{{2}[\\S\\s]+?\\}{2}[ \\t]+)(\\w+)(?=[\\S\\s]+?(?=\\*\\/))": {
+            "filterLanguageRegex": "(java|type)script",
+            "regexFlags": "gm",
+            "decorations": [
+                {},
+                {
+                    "color": "#408CFF",
+                    "fontStyle": "oblique",
+                    "textDecoration": "unset",
+                    "fontWeight": "initial"
+                },
+                {
+                    "color": "#318495",
+                    "fontWeight": "600",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "color": "#318495"
+                },
+                {
+                    "color": "#318495"
+                }
+            ]
+        },
+        "^([ \\t]*)([\\/]{2}[ ]?)(?:()(#)(region)(:)?|()(#)(endregion)(:)?)(?:([ ])(.+?))?([ \\t]*)$": {
+            "filterLanguageRegex": "(java|type)script|scad|json",
+            "regexFlags": "gmi",
+            "decorations": [
+                {},
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderColor": "#1188CC18",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#06C",
+                    "opacity": "1",
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "isWholeLine": true,
+                    "opacity": "0.6"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "color": "#CC0000",
+                    "opacity": "1",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "hsla(210, 100%, 70%, 1)",
+                    "fontWeight": "600"
+                }
+            ]
+        },
+        "^([ \\t]*)(?:()(#)(region)(:)?|()(#)(endregion)(:)?)([ ])(.+?)([ \\t]*)$": {
+            "filterLanguageRegex": "^c(#|sharp)?$",
+            "regexFlags": "gmi",
+            "decorations": [
+                {},
+                {
+                    "isWholeLine": true,
+                    "borderColor": "#1188CC18",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "color": "#06C",
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#06C",
+                    "opacity": "1",
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "isWholeLine": true,
+                    "opacity": "0.6"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "color": "#CC0000",
+                    "opacity": "1",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "hsla(210, 100%, 70%, 1)",
+                    "fontWeight": "600"
+                }
+            ]
+        },
+        "^([ \\t]*)([\\/]{2})(?:()(#)(FIXME)(:)?|()(#)(!FIXME)(:)?)([ ])(.+?)([ \\t]*)$": {
+            "filterLanguageRegex": "(java|type)script|scad|json",
+            "regexFlags": "gmi",
+            "decorations": [
+                {},
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderColor": "#CC111118",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "color": "#C11",
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#C11",
+                    "fontStyle": "unset",
+                    "opacity": "0.7",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#C11",
+                    "opacity": "0.5",
+                    "fontWeight": "400"
+                },
+                {
+                    "isWholeLine": true,
+                    "opacity": "0.2"
+                },
+                {
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#C11",
+                    "fontStyle": "unset",
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#C11",
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "opacity": "1",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "hsla(210, 100%, 70%, 1)",
+                    "fontWeight": "600"
+                }
+            ]
+        },
+        "^([ ]*)(//)(#)(section())([ ]+)(.+?)([ \\t]*$)": {
+            "filterLanguageRegex": "(java|type)script|scad|json|p(wsh|owershell)",
+            "regexFlags": "gmi",
+            "decorations": [
+                {},
+                {
+                    "opacity": "0.5"
+                },
+                {
+                    "color": "#A00"
+                },
+                {
+                    "backgroundColor": "#2288FF06",
+                    "color": "#A00"
+                },
+                {
+                    "isWholeLine": true
+                },
+                {
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "1",
+                    "color": "#06C"
+                },
+                {
+                    "isWholeLine": true,
+                    "backgroundColor": "#00FFFF03",
+                    "opacity": "0.6"
+                }
+            ]
+        },
+        "([=:][\\s\\n]*\\b)(require(?=[\\(]))([\\(])(['])((?:[^\\n\\r\\t']+|\\')+)(['])([\\)])": {
+            "filterLanguageRegex": "(type|java)script.*",
+            "regexFlags": "g",
+            "decorations": [
+                {},
+                {
+                    "color": "#FF0000CC",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#AAA",
+                    "opacity": "0.3"
+                },
+                {
+                    "color": "#AAA",
+                    "opacity": "0.7"
+                },
+                {
+                    "color": "#00AA44",
+                    "textDecoration": "; box-shadow:  0px 1.5px 0px #00AA00AA;"
+                },
+                {
+                    "color": "#AAA",
+                    "opacity": "0.7"
+                },
+                {
+                    "color": "#AAA",
+                    "opacity": "0.3"
+                }
+            ]
+        },
+        "^([ \\t]*)([\\/]{2}[ \\t]+)(.+)([\\t ]*[ ]+[\\-][ ][\\t ]*)(.+\\.options)": {
+            "filterFileRegex": "settings\\.json|\\.code-workspace",
+            "regexFlags": "gmi",
+            "decorations": [
+                {},
+                {},
+                {
+                    "color": "hsla(215, 100%, 60%, 1)",
+                    "fontStyle": "italic; -webkit-text-stroke: 0.0125em;",
+                    "fontWeight": "500"
+                },
+                {},
+                {
+                    "color": "hsla(210, 100%, 70%, 1)",
+                    "fontWeight": "600",
+                    "textDecoration": "; box-shadow: 0 0px 0 hsla(219, 100%, 30%, 0), 0px 2px 0px hsla(210, 100%, 70%, 1);"
+                }
+            ]
+        },
+        "([ \\t]*)([\\/]{2})([ \\t]+)([@]region\\b)([ ][ ]*?)([ ]?\\b.+?[ ]?)([ ]*$)": {
+            "filterFileRegex": "settings\\.json|\\.code-workspace",
+            "regexFlags": "gm",
+            "decorations": [
+                {},
+                {},
+                {},
+                {
+                    "color": "hsla(215, 100%, 60%, 1)",
+                    "fontStyle": "italic; -webkit-text-stroke: 0.0125em;",
+                    "fontWeight": "700"
+                },
+                {
+                    "width": "3em"
+                },
+                {
+                    "color": "#EDEDED",
+                    "backgroundColor": "hsla(210, 100%, 60%, 1)",
+                    "fontWeight": "700",
+                    "before": {
+                        "contentText": "▓▒░ ",
+                        "opacity": "1",
+                        "textDecoration": "; font-size: 105%; text-align: left; margin-right: -0.04em;",
+                        "color": "#EDEDED",
+                        "backgroundColor": "hsla(210, 100%, 60%, 1)"
+                    },
+                    "after": {
+                        "contentText": " ░▒▓",
+                        "opacity": "1",
+                        "textDecoration": "; font-size: 105%; text-align: right; margin-left: -0.04em;",
+                        "color": "#EDEDED",
+                        "backgroundColor": "hsla(210, 100%, 60%, 1)"
+                    }
+                },
+                {}
+            ]
+        },
+        "([\\/]{2}(?=[ ]*[@]region[ ]+(?:Decorators|Folding)|[ ]+Sync[ ]-[ ]settingsSync.options|[ ]*Highlight[ ]+Decorator[ ]+-[ ]+highlight\\.options))": {
+            "filterFileRegex": "settings\\.json|\\.code-workspace",
+            "regexFlags": "",
+            "decorations": [
+                {
+                    "overviewRulerLane": "full",
+                    "overviewRulerColor": "#00C",
+                    "before": {
+                        "contentText": "#",
+                        "color": "#B00",
+                        "fontWeight": "700",
+                        "fontStyle": "unset",
+                        "width": "1em",
+                        "border": "1px solid red",
+                        "height": "100%",
+                        "textDecoration": "; border-width: 0 0 0 0.25em ; padding-left: 0.25em; font-size: 100%; margin-left: -1.5em; position: absolute;"
+                    }
+                }
+            ]
+        },
+        "^([ \\t]+[\\/]{2}[ ])(Highlight)([ ]•[ ])(.+)$": {
+            "filterFileRegex": "settings[\\.]json|\\.code-workspace",
+            "regexFlags": "gmi",
+            "decorations": [
+                {
+                    "backgroundColor": "hsla(215, 20%, 92%, 1)",
+                    "isWholeLine": true
+                },
+                {
+                    "color": "#50a7e0",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "color": "#F05070AA",
+                    "fontWeight": "600"
+                },
+                {
+                    "opacity": "0.3"
+                }
+            ]
+        },
+        "([\\{])(LANG|appname|currentcolumn|currentline|dirname|filename|filesize|fulldirname|gitbranch|gitreponame|lang|null|totallines|workspace|workspaceFolder)([\\}])": {
+            "filterFileRegex": "settings\\.json|[\\.]code-workspace",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "color": "#CC0088",
+                    "fontStyle": "oblique",
+                    "opacity": "0.7"
+                },
+                {
+                    "color": "#CC0099",
+                    "fontStyle": "oblique",
+                    "opacity": "1",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#CC0088",
+                    "fontStyle": "oblique",
+                    "opacity": "0.7"
+                }
+            ]
+        },
+        "(?:([\\\\]{2})(\\1)|(?:([\\\\])([\\\\][sS]))+|(?:([\\\\])([\\\\][nbB]))+|(?:([\\\\])([\\\\])([\\[\\]\\)\\(\\{\\}])|(?:([\\\\])([\\\\])([\\?\\*\\^\\$\\/\\|])))|([\\\\](?:[\\\\]{2})*)(?=![\\\\]))": {
+            "filterLanguageRegex": "^jsonc?$",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "opacity": "0.5",
+                    "color": "#AACCFF",
+                    "border": "dashed 0.75px #00337780",
+                    "borderStyle": "none none dashed none",
+                    "fontWeight": "500",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#2066FF",
+                    "border": "dashed 0.75px #00337780",
+                    "borderStyle": "none none dashed none",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#27c2",
+                    "fontWeight": "500",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#23c",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#71A2",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#71A",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#4444EE",
+                    "opacity": "0.325",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#0033bb",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#0000BB",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#D51015",
+                    "opacity": "0.3",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#D51015",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#D51015",
+                    "fontWeight": "600",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#0F02",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#0F0",
+                    "textDecoration": "; box-shadow: 0 0.06125em 0 0 ",
+                    "fontWeight": "700",
+                    "rangeBehavior": 1
+                },
+                {
+                    "color": "#0AA2"
+                },
+                {
+                    "color": "#0AA",
+                    "textDecoration": "; box-shadow: 0 0.06125em 0 0 ",
+                    "fontWeight": "700"
+                },
+                {
+                    "backgroundColor": "#F00"
+                }
+            ]
+        },
+        "(\\$)(?:(TM_[A-Z]+(?:_[A-Z]+)*)|([\\d])|([\\{])(?:(TM_[A-Z]+(?:_[A-Z]+)*)|([\\d]))(?:(.+?(?=[\\}])))?(?:([\\/])(.+?)((?<![\\\\]{2})[\\/])(.+?)(?:(?<![\\\\]{2})[\\/])(\\w*))?([\\}]))": {
+            "filterFileRegex": "code-snippets|((type|java)script|shellscript|jsonc?|powershell)\\.json",
+            "regexFlags": "gmi",
+            "decorations": [
+                {
+                    "color": "#0088AAEE",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#0066CC",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#0066CC",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#0088AACC",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#0066CC",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#0066CC",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#9900AA",
+                    "fontStyle": "italic",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#00AA66",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#0033FF",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#FF0077",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#000000",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#FF0077",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#0088AACC",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                }
+            ]
+        },
+        "^([ ]{2}(?:[ ]{2})?)([\\/]{2}[ ]?)([@#](?:section|region))([ ])(.+?)([\\t ]*)$": {
+            "regexFlags": "gm",
+            "filterFileRegex": "keybindings\\.json",
+            "decorations": [
+                {
+                    "isWholeLine": true,
+                    "backgroundColor": "#AAEEFF10"
+                },
+                {
+                    "borderStyle": "none none outset none",
+                    "borderWidth": "1px",
+                    "borderColor": "#0033CC20"
+                },
+                {
+                    "color": "#CC0099",
+                    "fontStyle": "italic",
+                    "borderStyle": "none none outset none",
+                    "fontWeight": "700",
+                    "borderWidth": "0.125em",
+                    "borderColor": "#0033CC20"
+                },
+                {
+                    "borderStyle": "none none outset none",
+                    "borderWidth": "1px",
+                    "borderColor": "#0033CC20"
+                },
+                {
+                    "color": "#003399",
+                    "fontWeight": "700",
+                    "borderStyle": "none none outset none",
+                    "borderWidth": "1px",
+                    "borderColor": "#0033CC20"
+                },
+                {
+                    "borderStyle": "none none outset none",
+                    "borderWidth": "1px",
+                    "borderColor": "#0033CC20"
+                }
+            ]
+        },
+        "([/]{2})(?<=^[\\s]+[\\{] \\1)([ ]+)(\\S.+?)(\\s*$)": {
+            "regexFlags": "gm",
+            "filterFileRegex": "keybindings\\.json",
+            "decorations": [
+                {
+                    "opacity": "0.5"
+                },
+                {
+                    "opacity": "0.5"
+                },
+                {
+                    "color": "#b8006e",
+                    "opacity": "0.5",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {}
+            ]
+        },
+        "([\\w\\._]+)([\\t ]*)(=~)([\\t ]*)([\\/])(.+?)((?<![\\\\]{2})\\5)": {
+            "filterFileRegex": "(package|keybindings)\\.json",
+            "regexFlags": "gmi",
+            "decorations": [
+                {
+                    "backgroundColor": "#8881",
+                    "color": "#03A",
+                    "fontWeight": "600",
+                    "fontStyle": "unset"
+                },
+                {
+                    "backgroundColor": "#8881"
+                },
+                {
+                    "backgroundColor": "#8881",
+                    "color": "#9b0101",
+                    "fontWeight": "600",
+                    "fontStyle": "unset"
+                },
+                {
+                    "backgroundColor": "#8881"
+                },
+                {
+                    "backgroundColor": "#8881",
+                    "color": "#089c41",
+                    "fontStyle": "italic"
+                },
+                {
+                    "backgroundColor": "#8881",
+                    "color": "#D07",
+                    "fontWeight": "600",
+                    "fontStyle": "italic"
+                },
+                {
+                    "backgroundColor": "#8881",
+                    "color": "#089c41",
+                    "fontStyle": "italic"
+                }
+            ]
+        },
+        "(?<=^[ ]{6})(?:([\\[]NEW[\\]])|([\\w\\.]+))([ ]+)(.+)|(?<=^     )(- )([\\w ]+)": {
+            "filterFileRegex": "keybindings\\.json",
+            "regexFlags": "gmi",
+            "decorations": [
+                {
+                    "before": {
+                        "contentText": "[NEW]"
+                    }
+                },
+                {
+                    "color": "#11CC",
+                    "fontWeight": "600",
+                    "fontStyle": "unset"
+                },
+                {},
+                {
+                    "color": "#200D",
+                    "fontWeight": "500",
+                    "fontStyle": "unset"
+                },
+                {
+                    "fontStyle": "unset",
+                    "fontWeight": "600",
+                    "color": "#008"
+                },
+                {
+                    "textDecoration": "underline",
+                    "fontStyle": "unset",
+                    "fontWeight": "600",
+                    "color": "#008"
+                }
+            ]
+        },
+        "(\"key\")|(\"command\")|(\"when\")": {
+            "filterFileRegex": "keybindings\\.json",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "textDecoration": "; box-shadow: 0 0.125em #BB000060"
+                },
+                {
+                    "textDecoration": "; box-shadow: 0 0.125em #00AA0060"
+                },
+                {
+                    "textDecoration": "; box-shadow: 0 0.125em #0055CC60"
+                }
+            ]
+        },
+        "^([ \\t]*)(?:(--)(region)()([ ][ ]*)(.+?)$([ \\t]*)|(--)(endregion)())": {
+            "regexFlags": "gm",
+            "filterFileRegex": ".*\\.lua",
+            "decorations": [
+                {},
+                {
+                    "color": "#408CFF",
+                    "fontWeight": "500",
+                    "opacity": "0.5"
+                },
+                {
+                    "color": "#408CFF",
+                    "fontWeight": "600",
+                    "opacity": "0.5"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderColor": "#1188CC18",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {},
+                {
+                    "textDecoration": "; box-shadow: 0 0.0625em 0 0 #11AAEE80",
+                    "color": "#0099FF",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#408CFF",
+                    "fontWeight": "600",
+                    "opacity": "0.5"
+                },
+                {
+                    "color": "#408CFF",
+                    "fontWeight": "500",
+                    "opacity": "0.5"
+                },
+                {
+                    "isWholeLine": true,
+                    "opacity": "0.5"
+                }
+            ]
+        },
+        "^(  ####)(\\[[^\\n#]+\\])(#+[ ]*)$": {
+            "regexFlags": "gmi",
+            "filterFileRegex": "\\.p10k\\.zsh",
+            "decorations": [
+                {
+                    "color": "#408CFF",
+                    "opacity": "0.6"
+                },
+                {
+                    "color": "#0099DD",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#408CFF",
+                    "opacity": "0.6"
+                }
+            ]
+        },
+        "(?<=^[^#\"'\\n]*)(?:(?:(?:(#(?:#{2})?)(region)()|(#(?:#{2})?)(section)())([ \\t]+)(.+?)([ \\t]*$))|(?:(#(?:#{2})?)(endregion)()([ \\t]+)(.+?)([ \\t]*$)))": {
+            "regexFlags": "gm",
+            "filterLanguageRegex": "p(owershell|wsh|roperties)|shellscript",
+            "decorations": [
+                {
+                    "opacity": "0.7"
+                },
+                {
+                    "color": "#D00",
+                    "fontWeight": "600",
+                    "opacity": "1"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderColor": "#1188CC18",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "opacity": "0.7"
+                },
+                {
+                    "color": "#C09",
+                    "fontWeight": "600",
+                    "opacity": "1"
+                },
+                {
+                    "isWholeLine": true,
+                    "color": "#C09",
+                    "borderColor": "#CC009918",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {},
+                {
+                    "textDecoration": "; box-shadow: 0 0.0625em 0 0 #11AAEE80",
+                    "color": "#0099FF",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "color": "#0099FF",
+                    "opacity": "0.4"
+                },
+                {
+                    "color": "#0099FF",
+                    "opacity": "0.4"
+                },
+                {
+                    "isWholeLine": true,
+                    "opacity": "0.5"
+                },
+                {},
+                {
+                    "textDecoration": "; box-shadow: 0 0.0625em 0 0 #11AAEE80",
+                    "color": "#0099FF",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                },
+                {}
+            ]
+        },
+        "^(\\s+)(#+[ ]?)(?:([@]?[\\w]+(?:[:]|(?<=#[ ]?@[\\w]+))))([ \\t]*)$": {
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "shellscript",
+            "decorations": [
+                {},
+                {},
+                {
+                    "color": "#CC0099",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                }
+            ]
+        },
+        "(-\\w(?=\\W)|--\\w+(?:-\\w+)?)(?<=^(?:\\s*)(?:#+[ ]+).+)": {
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "shellscript",
+            "decorations": [
+                {
+                    "color": "#AA55AA",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {},
+                {},
+                {
+                    "color": "#AA0000",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                }
+            ]
+        },
+        "((?:or|[:,]||^ # +) )('[^']+?')(?<=^(?:\\s*)(?:#+[ ]+)-.+?: .+|^ # +'.+)": {
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "shellscript|zsh|zshell",
+            "decorations": [
+                {},
+                {
+                    "color": "#2233AA",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                },
+                {},
+                {},
+                {
+                    "color": "#AA0000",
+                    "fontStyle": "italic",
+                    "fontWeight": "700"
+                }
+            ]
+        },
+        "(['\"])(?:([\\(])(.+?)([\\)]))?(-\\w(?=\\W)|--\\w+(?:-\\w+)*)([=\\+]?)(\\[)(.+?)(\\])(?:(?:([:])(.*?:[\\(])?([ ]*[\\(])?|)(.+?)([\\)])?)?(\\1)": {
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "shellscript|zsh|zshell",
+            "decorations": [
+                {
+                    "backgroundColor": "#55AA3303",
+                    "color": "#88CC9990",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "backgroundColor": "#55AA3303",
+                    "color": "#88CC9990",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "backgroundColor": "#55AA3303",
+                    "color": "#001199",
+                    "fontWeight": "600"
+                },
+                {
+                    "backgroundColor": "#55AA3303",
+                    "color": "#88CC9990",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "color": "#CC0000",
+                    "backgroundColor": "#55AA3303",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#00a055",
+                    "backgroundColor": "#55AA3303",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "color": "#116699",
+                    "backgroundColor": "#55AA3303",
+                    "fontStyle": "oblique",
+                    "opacity": "0.8",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88AA99",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#3a179b",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#F0F",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#b80c67",
+                    "backgroundColor": "#55AA3303",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#88CCAA",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88AA99",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88AA99",
+                    "backgroundColor": "#55AA3303"
+                }
+            ]
+        },
+        "(\\{)(-[\\w]+|--?[\\w]+(?:-[\\w]+)*)(,)(-[\\w]+|--?[\\w]+(?:-[\\w]+)*)(\\})(['\"])([=\\+]?)(\\[)(.+?)(\\])(?:(?:(:)(.*?:\\()?([ ]*[\\(])?|)(.+?)(\\))?)?(\\6)": {
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "shellscript|zsh|zshell",
+            "decorations": [
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#0077AA",
+                    "backgroundColor": "#55AA3303",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#0077AA",
+                    "backgroundColor": "#55AA3303",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#AA5577",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#996699",
+                    "backgroundColor": "#55AA3303",
+                    "fontStyle": "italic"
+                },
+                {
+                    "color": "#88CC9990",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88AA99",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88AA99",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88CCAA",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#115599E0",
+                    "backgroundColor": "#55AA3303",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#88CCAA",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88AA99",
+                    "backgroundColor": "#55AA3303"
+                },
+                {
+                    "color": "#88AA99",
+                    "backgroundColor": "#55AA3303"
+                }
+            ]
+        },
+        "([\\}][ ]*)(always)([ ]*[\\{])": {
+            "filterLanguageRegex": "(?:shell(?:script)?)",
+            "decorations": [
+                {},
+                {
+                    "color": "#3333FF",
+                    "fontWeight": "bold",
+                    "textDecoration": "underline #0033FF50"
+                },
+                {}
+            ]
+        },
+        "(?<=(?:^|;|[\\(][ ]*[\\)][\\{]|[&]{2}|[\\|]{2}))([ ]+)?(builtin)([ ]+)(emulate)( zsh[ ]*)(?:(?=-[lL])(-L)|(-l))?": {
+            "regexFlags": "gm",
+            "filterLanguageRegex": "(?:shell(?:script)?)",
+            "decorations": [
+                {},
+                {
+                    "fontStyle": "normal",
+                    "fontWeight": "600",
+                    "color": "#CC0000"
+                },
+                {},
+                {
+                    "fontStyle": "normal",
+                    "fontWeight": "600",
+                    "color": "#CC0000"
+                },
+                {
+                    "fontStyle": "oblique",
+                    "fontWeight": "600",
+                    "color": "#0000AA"
+                },
+                {
+                    "fontStyle": "oblique",
+                    "fontWeight": "600",
+                    "color": "#0000EE"
+                },
+                {
+                    "backgroundColor": "#AA3333",
+                    "color": "white"
+                }
+            ]
+        },
+        "[\\b](zinit|zplugin)(?:((?:[ \\t]+|[\\\\][\\n])+)(?:(ice|snippet|load|\\$loader)|(for|lucid)|((?:as|atload|atinit|from|pick|nocompile|atpull|wait)(?:'(?:\\\\'|[^\\\\]+)'|\"(?:\\\\\"|[^\\\\]+)\")?)))": {
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "(?:shell(?:script)?)",
+            "decorations": [
+                {
+                    "outline": "1px red solid "
+                },
+                {
+                    "color": "#0000AA",
+                    "fontWeight": "bold",
+                    "fontStyle": "italic"
+                },
+                {
+                    "outline": "1px magenta solid"
+                },
+                {},
+                {
+                    "color": "#66AA44",
+                    "fontWeight": "800",
+                    "textDecoration": "italic"
+                },
+                {
+                    "color": "#9DCD44",
+                    "fontWeight": "800",
+                    "textDecoration": "italic"
+                },
+                {
+                    "color": "#0000DD"
+                },
+                {
+                    "color": "#006666"
+                },
+                {
+                    "color": "#338899",
+                    "fontWeight": "800"
+                },
+                {},
+                {
+                    "border": "2px #99FF9930"
+                },
+                {
+                    "outline": "1px solid red"
+                },
+                {
+                    "outline": "1px solid #00DDDD"
+                },
+                {
+                    "outline": "2px solid blue"
+                }
+            ]
+        },
+        "(\\*[ ]+)([ \\w\\.\\/\\\\\\[\\]\\{\\}]*?[ ]?)([\\|](?:[—])*?[\\|])(.*)": {
+            "filterFileRegex": "settings(?:\\.\\w+)?\\.json|\\.code-workspace$",
+            "regexFlags": "gmi",
+            "decorations": [
+                {},
+                {
+                    "color": "#00CC44"
+                },
+                {
+                    "color": "#000088",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "#00CC44"
+                }
+            ]
+        },
+        "^(?<![\\s\\S\\r])(?:((?=#!))(#!)(?:([a-z_-]+)(\\s*)|(.+?[\\/])(env)([ ]+)([\\w]+)(?:([ ]+)(.+?)|())([ \\t]*))|(#)(?:(autoload)(.*)|(compdef)(.*)))$": {
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "shellscript|zsh|zshell",
+            "decorations": [
+                {
+                    "borderStyle": "none none solid none",
+                    "borderWidth": ".125em",
+                    "borderColor": "#AA000020",
+                    "borderRadius": "0.1em",
+                    "isWholeLine": true
+                },
+                {
+                    "color": "#AA0000",
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {},
+                {},
+                {
+                    "color": "#880000",
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#CC0000",
+                    "opacity": "1",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "color": "#0011EE",
+                    "fontWeight": "700",
+                    "fontStyle": "unset"
+                },
+                {},
+                {
+                    "color": "#CC99AA",
+                    "fontStyle": "unset",
+                    "fontWeight": "500"
+                },
+                {},
+                {},
+                {
+                    "color": "#CC0000",
+                    "opacity": "1",
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "borderStyle": "none none solid none",
+                    "borderWidth": ".125em",
+                    "borderColor": "#AA000020",
+                    "borderRadius": "0.1em"
+                },
+                {
+                    "color": "#CC0000",
+                    "opacity": "1",
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "borderStyle": "none none solid none",
+                    "borderWidth": ".125em",
+                    "borderColor": "#AA000020",
+                    "borderRadius": "0.1em"
+                },
+                {
+                    "color": "#CC0000",
+                    "opacity": "0.8",
+                    "fontStyle": "oblique",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#CC0000",
+                    "opacity": "1",
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "borderStyle": "none none solid none",
+                    "borderWidth": ".125em",
+                    "borderColor": "#AA000020",
+                    "borderRadius": "0.1em"
+                },
+                {
+                    "color": "#CC0000",
+                    "opacity": "0.8",
+                    "fontStyle": "oblique",
+                    "fontWeight": "600"
+                }
+            ]
+        },
+        "(?:(?:(&amp;)|(&lt;)|(&gt;)|(&quot;)|(&apos;))(?=[^><]*</))": {
+            "filterLanguageRegex": "xml|tmLanguage",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "textDecoration": "; box-shadow: 0 2px 0 0 #00883380"
+                },
+                {
+                    "textDecoration": "; box-shadow: 0 2px 0 0 #AA006680"
+                },
+                {
+                    "textDecoration": "; box-shadow: 0 2px 0 0 #AA006680"
+                },
+                {
+                    "textDecoration": "; box-shadow: 0 2px 0 0 0033FF80"
+                },
+                {
+                    "textDecoration": "; box-shadow: 0 2px 0 0 #2266EE80"
+                }
+            ]
+        },
+        "(?<=^[^#\"'\\n]*)(?:(?:(?:([\\/]{2}[ ]?#)(region)()|([\\/]{2}[ ]?#)(section)())([ \\t]+)(.+?)([ \\t]*$))|(?:([\\/]{2}[ ]?#)(endregion)()([ \\t]+)(.+?)([ \\t]*$)))": {
+            "regexFlags": "gm",
+            "filterLanguageRegex": "stylus",
+            "decorations": [
+                {
+                    "color": "#C00",
+                    "opacity": "0.7",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "#C00",
+                    "fontWeight": "600",
+                    "opacity": "1",
+                    "fontStyle": "unset"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderColor": "#1188CC18",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "opacity": "0.7"
+                },
+                {
+                    "color": "#C09",
+                    "fontWeight": "600",
+                    "opacity": "1"
+                },
+                {
+                    "isWholeLine": true,
+                    "color": "#C09",
+                    "borderColor": "#CC009918",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {},
+                {
+                    "textDecoration": "; box-shadow: 0 0.0625em 0 0 #1188CC80",
+                    "color": "#1188CC",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                },
+                {},
+                {
+                    "color": "#1188CC",
+                    "opacity": "0.4"
+                },
+                {
+                    "color": "#1188CC",
+                    "opacity": "0.4"
+                },
+                {
+                    "isWholeLine": true,
+                    "opacity": "0.5"
+                },
+                {},
+                {
+                    "textDecoration": "; box-shadow: 0 0.0625em 0 0 #11AAEE80",
+                    "color": "#0099FF",
+                    "fontStyle": "italic",
+                    "fontWeight": "600"
+                },
+                {}
+            ]
+        },
+        "^(?:([ \\t]*)([#][ ]*)(?:([@][\\w\\d_-]+)(.*)|(.*))$|([ \\t]*)(color-link)([ \\t]+)(\\S+?\\.)?(\\S+))": {
+            "filterFileRegex": ".*\\.micro",
+            "regexFlags": "gm",
+            "decorations": [
+                {},
+                {
+                    "color": "#888"
+                },
+                {
+                    "color": "#b3316d",
+                    "fontStyle": "oblique",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#888888"
+                },
+                {
+                    "color": "#888888"
+                },
+                {
+                    "color": "#888888"
+                },
+                {},
+                {},
+                {
+                    "color": "#0000AA"
+                },
+                {
+                    "color": "#ac002b"
+                },
+                {
+                    "color": "#0000CC"
+                },
+                {
+                    "color": "#0000CC"
+                },
+                {
+                    "fontWeight": "800"
+                }
+            ]
+        },
+        "(?<=^[^']+['].*)(?:([\\\\])([\\/])|([\\\\])([\\*\\?\\$\\^]))": {
+            "filterFileRegex": "\\.yaml$",
+            "regexFlags": "gmi",
+            "decorations": [
+                {
+                    "color": "#800",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#800",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#11BB00",
+                    "opacity": "0.7",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#11BB00",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#4444EE",
+                    "opacity": "0.325"
+                },
+                {
+                    "color": "#0057bb",
+                    "opacity": "0.7",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#0000BB",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#D51015",
+                    "opacity": "0.3"
+                },
+                {
+                    "color": "#D51015",
+                    "opacity": "0.8",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#D51015",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#0F02"
+                },
+                {
+                    "color": "#0F0",
+                    "textDecoration": "; box-shadow: 0 0.06125em 0 0 ",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#0AA2"
+                },
+                {
+                    "color": "#0AA",
+                    "textDecoration": "; box-shadow: 0 0.06125em 0 0 ",
+                    "fontWeight": "700"
+                },
+                {
+                    "backgroundColor": "#F00"
+                }
+            ]
+        },
+        "^([ \\t]*)(?:()(#)(region)|()(#)(endregion))([ ]+)(.+?)([ \\t]*)$": {
+            "filterLanguageRegex": "powershell",
+            "regexFlags": "gmi",
+            "decorations": [
+                {},
+                {
+                    "isWholeLine": true,
+                    "borderColor": "#1188CC18",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "color": "#AA0000",
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#AA0000",
+                    "opacity": "0.5",
+                    "fontWeight": "600"
+                },
+                {
+                    "isWholeLine": true,
+                    "opacity": "0.5",
+                    "color": "#AA0000"
+                },
+                {},
+                {},
+                {},
+                {
+                    "color": "#CC0000",
+                    "opacity": "0.8",
+                    "fontWeight": "600"
+                },
+                {}
+            ]
+        },
+        "(?<=^[ \\t]+)([#]{3}[ ])(.+?)([ \\t]*$)": {
+            "filterLanguageRegex": "powershell",
+            "regexFlags": "gmi",
+            "decorations": [
+                {
+                    "isWholeLine": true,
+                    "color": "#2288AA",
+                    "fontStyle": "oblique",
+                    "fontWeight": "600"
+                },
+                {
+                    "borderWidth": "0px 0px 2px 0px",
+                    "borderStyle": "none none solid none",
+                    "borderColor": "#2288AA40"
+                },
+                {}
+            ]
+        },
+        "([\\$]home(?=$|\\b))": {
+            "regexFlags": "gm",
+            "filterFileRegex": "(settings|projects)\\.json|\\.code-workspace",
+            "decorations": [
+                {
+                    "rangeBehavior": 1,
+                    "color": "#004cff",
+                    "fontWeight": "600",
+                    "fontStyle": "oblique"
+                }
+            ]
+        },
+        "(?:^(?:(;()(?:LAYER|MESH):)(.*)|(;()TYPE:)(.+)|(;M(?:AX|IN)[XYZ]:)(.+))$)": {
+            "filterLanguageRegex": "gcode",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "color": "#AA0000",
+                    "fontWeight": "600"
+                },
+                {
+                    "isWholeLine": true,
+                    "overviewRulerLane": "left",
+                    "overviewRulerColor": "#AA0000",
+                    "fontWeight": "700",
+                    "backgroundColor": "#AA000020",
+                    "borderColor": "#AA000020",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "color": "#AA0000"
+                },
+                {
+                    "color": "#0044CC",
+                    "fontWeight": "600"
+                },
+                {
+                    "isWholeLine": true,
+                    "overviewRulerLane": "center",
+                    "fontWeight": "700",
+                    "backgroundColor": "#0044CC20",
+                    "overviewRulerColor": "#0044CC",
+                    "borderColor": "#0044CC20",
+                    "borderStyle": "solid",
+                    "borderWidth": "0 0 0.0625em 0"
+                },
+                {
+                    "color": "#0044CC"
+                },
+                {
+                    "color": "#007755",
+                    "fontWeight": "700"
+                },
+                {
+                    "color": "#007755"
+                }
+            ]
+        },
+        "([\\$][\\{])([^\\}\\s]+?)([\\}])": {
+            "filterFileRegex": "(configuration|tasks)\\.json",
+            "regexFlags": "gmi",
+            "filterLanguageRegex": "jsonc?",
+            "decorations": [
+                {
+                    "color": "#C02",
+                    "opacity": "0.7",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "color": "#C02",
+                    "fontWeight": "600",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "color": "#C02",
+                    "opacity": "0.7",
+                    "fontStyle": "oblique"
+                }
+            ]
+        },
+        "^(#Requires)([ ]+)(?:(-Version())([ ]+)(?:([\\d])(?:([\\.])([\\d]+)(?:([\\.])([\\d]+))?)?)|(-Module())([ ]+)(.+)|(-[A-Z][a-z]+(?=\\S)())([ ]+)(.+))$": {
+            "filterLanguageRegex": "powershell",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "color": "#00F",
+                    "fontWeight": "600",
+                    "fontStyle": "unset"
+                },
+                {},
+                {
+                    "color": "#C00",
+                    "fontStyle": "oblique",
+                    "fontWeight": "600"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderStyle": "none none solid none",
+                    "borderWidth": ".125em",
+                    "borderColor": "#AA000020",
+                    "borderRadius": "0.1em",
+                    "fontStyle": ""
+                },
+                {},
+                {
+                    "color": "#C00",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "#C00",
+                    "opacity": "0.8",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "#C00",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "#C00",
+                    "opacity": "0.8",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "#C00",
+                    "fontStyle": "unset"
+                },
+                {
+                    "color": "#0011CC",
+                    "fontWeight": "700",
+                    "fontStyle": "unset"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderStyle": "none none solid none",
+                    "borderWidth": ".125em",
+                    "borderColor": "#0011CC20",
+                    "borderRadius": "0.1em",
+                    "fontStyle": ""
+                },
+                {},
+                {
+                    "color": "#0044f0",
+                    "fontStyle": "oblique"
+                },
+                {
+                    "color": "#0011CC",
+                    "fontWeight": "700",
+                    "fontStyle": "unset"
+                },
+                {
+                    "isWholeLine": true,
+                    "borderStyle": "none none solid none",
+                    "borderWidth": ".125em",
+                    "borderColor": "#0011CC20",
+                    "borderRadius": "0.1em",
+                    "fontStyle": ""
+                },
+                {},
+                {
+                    "color": "#0044f0",
+                    "fontStyle": "oblique"
+                }
+            ]
+        },
+        "([`]e[\\[])": {
+            "filterLanguageRegex": "powershell",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "color": "#00DD00",
+                    "fontWeight": "600"
+                }
+            ]
+        },
+        "(?<=(?:[`]e)(?:[\\[])[;\\[\\d]*)(?:(38;5;)([\\d]+)([;m])?|(48;5;)([\\d]+)([;m])?)": {
+            "filterLanguageRegex": "powershell",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "color": "#DD0000",
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "opacity": "0.5"
+                },
+                {
+                    "color": "#DD0000",
+                    "fontStyle": "normal",
+                    "fontWeight": "600"
+                },
+                {
+                    "color": "#DD0000",
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "opacity": "0.5"
+                },
+                {
+                    "backgroundColor": "#00FF3320",
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "opacity": "0.5"
+                },
+                {
+                    "backgroundColor": "#00FF3320",
+                    "fontStyle": "normal",
+                    "fontWeight": "600"
+                },
+                {
+                    "backgroundColor": "#00FF3320",
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "opacity": "0.5"
+                }
+            ]
+        },
+        "(?<=[^`])(`)(e)(\\[)((?:[39]\\d|(?:4|10)[1-7]))(m)": {
+            "regexFlags": "gm",
+            "filterLanguageRegex": "powershell",
+            "decorations": [
+                {
+                    "color": "#11111144",
+                    "backgroundColor": "#00AAAA0C",
+                    "textDecoration": "; box-shadow: 0 2.5px 0 0 #00AAAA;"
+                },
+                {
+                    "color": "#11111144",
+                    "backgroundColor": "#00AAAA0C",
+                    "textDecoration": "; box-shadow: 0 2.5px 0 0 #00AAAA;"
+                },
+                {
+                    "color": "#11111144",
+                    "backgroundColor": "#00AAAA0C",
+                    "textDecoration": "; box-shadow: 0 2.5px 0 0 #00AAAA;"
+                },
+                {
+                    "backgroundColor": "#00AAAA0C",
+                    "fontWeight": "600",
+                    "textDecoration": "; box-shadow: 0 2.5px 0 0 #00AAAA;"
+                },
+                {
+                    "backgroundColor": "#00AAAA0C",
+                    "fontWeight": "600",
+                    "textDecoration": "; box-shadow: 0 2.5px 0 0 #00AAAA;"
+                }
+            ]
+        },
+        "^([\\[])([^\\]]+)([\\]])( +)(?:(?:([\\[])(info)([\\]])|([\\[])(debug)([\\]])|([\\[])(warn)([\\]])|([\\[])(error)([\\]]))?(?:((?:[ ]+[\\[][^\\]]+[\\]])+))?)?": {
+            "filterFileRegex": ".*\\.log|extension-output-.*",
+            "regexFlags": "gmi",
+            "decorations": [
+                {
+                    "backgroundColor": "#18E1",
+                    "color": "#00F4",
+                    "fontStyle": "normal",
+                    "fontWeight": "300"
+                },
+                {
+                    "backgroundColor": "#18E1",
+                    "color": "#00F",
+                    "fontStyle": "unset",
+                    "fontWeight": "500"
+                },
+                {
+                    "backgroundColor": "#18E1",
+                    "color": "#00F4",
+                    "fontStyle": "unset",
+                    "fontWeight": "300"
+                },
+                {},
+                {
+                    "color": "#0066cc",
+                    "opacity": "0.5",
+                    "fontStyle": "unset",
+                    "fontWeight": "300"
+                },
+                {
+                    "color": "#00F",
+                    "fontStyle": "unset",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#0066cc",
+                    "opacity": "0.5",
+                    "fontStyle": "unset",
+                    "fontWeight": "300"
+                },
+                {
+                    "color": "#408CFF",
+                    "fontStyle": "unset",
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#1A3",
+                    "fontStyle": "unset",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#408CFF",
+                    "fontStyle": "unset",
+                    "opacity": "0.5",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#ec4f00",
+                    "fontStyle": "unset",
+                    "opacity": "0.5",
+                    "fontWeight": "300"
+                },
+                {
+                    "color": "#ec4f00",
+                    "fontStyle": "unset",
+                    "fontWeight": "500"
+                },
+                {
+                    "color": "#ec4f00",
+                    "fontStyle": "unset",
+                    "opacity": "0.5",
+                    "fontWeight": "300"
+                },
+                {
+                    "color": "#C008",
+                    "fontStyle": "oblique",
+                    "fontWeight": "400",
+                    "textDecoration": "solid underline"
+                },
+                {
+                    "color": "#C00",
+                    "fontStyle": "oblique",
+                    "fontWeight": "700",
+                    "textDecoration": "solid underline"
+                },
+                {
+                    "color": "#C008",
+                    "fontStyle": "oblique",
+                    "fontWeight": "400",
+                    "textDecoration": "solid underline"
+                },
+                {
+                    "color": "#00A",
+                    "fontStyle": "unset",
+                    "fontWeight": "500"
+                }
+            ]
+        },
+        "$^((?!(?:\\/(?:\\*|\\/)).)*(?:(?:\\b(?:if|unless)\\b.+)|(?:.*\\{|(?:\\.[a-zA-Z_$-][a-zA-Z_$-]*|\\w+|[a-zA-Z_-][a-zA-Z_$-]*)(?:#[a-zA-Z_$-][a-zA-Z_$-]*)?)\\s*))$": {
+            "filterLanguageRegex": "Language Indent Debugging - Set target language to activate",
+            "regexFlags": "gm",
+            "decorations": [
+                {
+                    "isWholeLine": true,
+                    "backgroundColor": "#05F1",
+                    "borderStyle": "solid none solid none",
+                    "borderColor": "#05F8",
+                    "borderWidth": "1px 0 0 0 ",
+                    "after": {
+                        "contentText": "INDENT",
+                        "margin": "0em 3em",
+                        "width": "auto",
+                        "textDecoration": "; position: absolute;",
+                        "color": "#FFF"
+                    }
+                }
+            ]
+        },
+        "((?!.*?\\/\\*).*\\*/\\s*)?([\\}])(?=.*$)": {
+            "filterLanguageRegex": "Language Indent Debugging - Set target language to activate",
+            "regexFlags": "gm",
+            "decorations": [
+                {},
+                {
+                    "isWholeLine": true,
+                    "backgroundColor": "#F001",
+                    "borderStyle": "none none solid none",
+                    "borderColor": "#F008",
+                    "borderWidth": "0 0 1px 0 ",
+                    "after": {
+                        "contentText": "DEDENT",
+                        "margin": "0em 3em",
+                        "width": "auto",
+                        "textDecoration": "; position: absolute;",
+                        "color": "#FFF"
+                    }
+                }
+            ]
+        }
+    }
+}
