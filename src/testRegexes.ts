@@ -78,14 +78,4 @@ export namespace tests
     export const invalid = Object.freeze(getInvalidFlatRegexes(all));
 }
 
-// export const valid = 
-//     Object.fromEntries(
-//         Object.entries(tests)
-//             .filter(([, {valid}]) => valid) )
-
-// export const invalid = 
-//     Object.fromEntries(
-//         Object.entries(tests)
-//             .filter(([, {valid}]) => !valid) )
-
 export default tests

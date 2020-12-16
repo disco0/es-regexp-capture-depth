@@ -56,6 +56,7 @@ export class FlatRegexCaptureCheck
 
         return this.#resultValue!;
     }
+    /** @private */
     #resultValue?: Promise<boolean> = undefined;
 
     /**
@@ -197,6 +198,7 @@ export class FlatRegexCaptureCheck
         return this.#resultValue;
     }
 
+    /** @private */
     static readonly defaults = 
     {
         ecmaVersion: EcmaVersions[2020],
