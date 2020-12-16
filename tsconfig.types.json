@@ -5,5 +5,11 @@
     [
         {"path": "./src/tsconfig.json"},
         {"path": "./src/test/tsconfig.json"}
-    ]
+    ],
+
+    "compilerOptions": 
+    {
+        "emitDeclarationOnly": true,
+        "declarationDir": "./@types"
+    }
 }

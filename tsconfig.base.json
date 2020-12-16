@@ -6,6 +6,8 @@
         "typeRoots": ["./node_modules/@types"],
         "moduleResolution": "Node",
 
+        "useDefineForClassFields": true,
+
         "strictBindCallApply": true,
         "noImplicitThis": true,
 
