@@ -2,19 +2,22 @@
   "name": "regexp-capture-analysis",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "@types/index.d.ts",
+  "files": 
+  [
+    "@types",
+    "dist"
+  ],
   "scripts": {
     "test": "cross-env TS_NODE_PROJECT=\"./src/test/tsconfig.json\" ava src/test/**/*.spec.ts",
     "ts-node-base": "cross-env TS_NODE_PROJECT=\"src/tsconfig.json\" node --harmony-regexp-match-indices -r $(npm -g root)/ts-node/register",
-    "test:inspectGroups": "yarn run ts-node-base src/inspectGroups.test.ts",
-    "test:ast": "yarn run ts-node-base src/ast.test.ts",
-    "build": "tsc -b ./tsconfig.json",
-    "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint . --fix --ext .ts",
-    "start:debug": "ts-node-dev --inspect=0.0.0.0:9229 src/index.ts",
-    "start": "node dist/"
+    "build": "tsc --build ./tsconfig.json",
+    "build:watch": "yarn run build --watch",
+    "build:types": "tsc --build ./tsconfig.types.json",
+    "clean": "rimraf @types dist .tsbuildinfo"
   },
-  "keywords": [],
+  "keywords": ["ecmascript", "regexp"],
   "author": "",
   "license": "MIT",
   "ava": {
