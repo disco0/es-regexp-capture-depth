@@ -20,5 +20,5 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DepthStateThrownSignal = void 0;
-exports.DepthStateThrownSignal = __importStar(require("./ThrownSignal"));
+exports.DepthStateThrownSignal = __importStar(require("./thrown"));
 //# sourceMappingURL=index.js.map

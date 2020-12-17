@@ -21,8 +21,8 @@ exports.FlatRegexCaptureCheck = void 0;
 const regexpp_1 = require("regexpp");
 const chalk_1 = __importDefault(require("chalk"));
 const EcmaVersions_1 = __importDefault(require("./EcmaVersions"));
-const ThrownSignal_1 = require("./DepthState/ThrownSignal");
 const debug_1 = require("./debug");
+const thrown_1 = require("./DepthState/thrown");
 class FlatRegexCaptureCheck {
     constructor(regexp, immediate = FlatRegexCaptureCheck.defaults.immediate) {
         Object.defineProperty(this, "regex", {
@@ -67,7 +67,7 @@ class FlatRegexCaptureCheck {
                 VALID: () => (resolve(true)),
                 INVALID: () => (resolve(false))
             };
-            let depth = new ThrownSignal_1.DepthStateSignalThrower();
+            let depth = new thrown_1.DepthStateSignalThrower();
             try {
                 debug_1.console.debug(`Initalizing validator`);
                 const source = this.regex.toString();
@@ -132,7 +132,7 @@ class FlatRegexCaptureCheck {
                 validator.validateLiteral(this.regex.toString());
             }
             catch (error) {
-                if (error instanceof ThrownSignal_1.Signals.DepthStateBoundsError)
+                if (error instanceof thrown_1.Signals.DepthStateBoundsError)
                     RESOLVE.INVALID();
                 else {
                     (msg => {
