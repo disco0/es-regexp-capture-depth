@@ -6,6 +6,6 @@ export { DepthState as DepthStateSignalThrower } from './DepthStateThrownSignal'
 
 // Relevant types
 export {
-    BoundaryChange,
+    BoundaryChangeValidation as BoundaryChange,
     DepthStateRecord
-} from './common';
+} from '../common';

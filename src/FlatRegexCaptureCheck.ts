@@ -1,16 +1,15 @@
 //#region Imports
 
 // npm
-import { 
-    AST,
-    RegExpValidator,
-} from 'regexpp';
+import { AST, RegExpValidator } from 'regexpp';
 import c from 'chalk';
 
 import EcmaVersions from './EcmaVersions';
-import is from './guards';
-import { DepthStateSignalThrower as DepthState, Signals } from './DepthState/ThrownSignal'
-import { console, writeDebug } from './debug'
+import { console } from './debug';
+import { 
+    DepthStateSignalThrower as DepthState, 
+    Signals 
+} from './DepthState/thrown';
 
 //#endregion Imports
 

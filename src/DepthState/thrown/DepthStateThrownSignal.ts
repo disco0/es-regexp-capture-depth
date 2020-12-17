@@ -3,43 +3,43 @@
 // npm
 import c from 'chalk';
 
-import is from '../guards';
-import { RangeInfo, RangeBounds, RangeTuple } from '../RangeInfo'
-import { console, writeDebug } from '../debug';
+import is from '../../guards';
+import { RangeInfo } from '../../RangeInfo'
+import { console, writeDebug } from '../../debug';
 
 import { 
-    DepthStateBoundsError,
-} from './signalErrors';
-import { 
-    BoundaryChange,
-    DepthStateRecord
-} from './common'
+    BoundaryChangeValidation, 
+    DepthStateRecord,
+    DepthStateChangeHandles
+} from '../common'
+import DepthStateBase from '../DepthStateBase';
+
+import { DepthStateBoundsError } from './signalErrors';
 
 //#endregion Imports
 
 /**
  * Number object with bounds detection, indicates bounds violation by throwing 
  * predefined custom error instances (`)
- * 
  */
-export class DepthState
+export class DepthState extends DepthStateBase
 {
-    lookaheadRange = RangeInfo(0, 1);
-    groupRange     = RangeInfo(0, 1);
+    lookaheadRange  = RangeInfo(0, 1);
+    groupRange      = RangeInfo(0, 1);
 
-    groupDepth:     number = 0;
-    lookaroundDepth: number = 0;
+    groupDepth      = 0;
+    lookaroundDepth = 0;
 
     get depths(): { group: number, lookAround: number }
     {
         return {
-            group:     this.groupDepth,
+            group:      this.groupDepth,
             lookAround: this.lookaroundDepth
         }
     }
 
     /**
-     * Calculate state given a set of state changes
+     * Calculate advanced state given a set of state changes
      */
     depthsPlusDelta(change: Partial<DepthStateRecord>): { group: number, lookAround: number }
     {
@@ -58,12 +58,10 @@ export class DepthState
     constructor(groupLimit?: number,    lookaheadLimit?: number); 
     constructor(groupLimit: number = 1, lookaheadLimit: number = 1) 
     { 
+        super();
         this.lookaheadRange = RangeInfo(0, lookaheadLimit);
         this.groupRange     = RangeInfo(0, groupLimit);
     }
-
-    // Needed because TypeScript explodes instead of handing toPrimative symbol
-    valueOf(): number { return this.depths.group }
 
     //#region Bound State Updating
 
@@ -75,17 +73,17 @@ export class DepthState
     {
         group:     (): DepthState => { this.validate({ groupDepth:  1, lookaroundDepth:  0 }); this.groupDepth++;      return this },
         lookahead: (): DepthState => { this.validate({ groupDepth:  0, lookaroundDepth:  1 }); this.lookaroundDepth++; return this },
-    } as const;
+    } as DepthStateChangeHandles<DepthState>;
 
     dec =
     {
-        group:     (): DepthState => { this.validate({ groupDepth: -1, lookaroundDepth:  0 }); this.groupDepth--;      return this },
-        lookahead: (): DepthState => { this.validate({ groupDepth:  0, lookaroundDepth: -1 }); this.lookaroundDepth--; return this },
-    } as const;
+        group:     () => { this.validate({ groupDepth: -1, lookaroundDepth:  0 }); this.groupDepth--;      return this },
+        lookahead: () => { this.validate({ groupDepth:  0, lookaroundDepth: -1 }); this.lookaroundDepth--; return this },
+    } as DepthStateChangeHandles<DepthState>
 
     //#endregion Bound State Updating
 
-    #validations: BoundaryChange[] =
+    #validations: BoundaryChangeValidation[] =
     [
         /*
          * Group bound change
