@@ -1,1 +1,1 @@
-export * as DepthStateThrownSignal from './ThrownSignal';
+export * as DepthStateThrownSignal from './thrown';
