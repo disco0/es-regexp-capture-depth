@@ -12,7 +12,8 @@
   "scripts": {
     "test": "cross-env TS_NODE_PROJECT=\"./src/test/tsconfig.json\" ava src/test/**/*.spec.ts",
     "ts-node-base": "cross-env TS_NODE_PROJECT=\"src/tsconfig.json\" node --harmony-regexp-match-indices -r $(npm -g root)/ts-node/register",
-    "build": "tsc --build ./tsconfig.json",
+    "build": "yarn run build:lib",
+    "build:lib": "tsc --build ./tsconfig.lib.json",
     "build:watch": "yarn run build --watch",
     "build:types": "tsc --build ./tsconfig.types.json",
     "clean": "rimraf @types dist .tsbuildinfo"
