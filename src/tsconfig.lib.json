@@ -1,0 +1,45 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        // "outDir": "../dist",
+        "resolveJsonModule": true,
+        "rootDir": ".",
+        "tsBuildInfoFile": "../.tsbuildinfo/.src.build.tsbuildinfo"
+    },
+    "include": [
+        "globals.d.ts",
+        "./**/*.ts",
+        "./vscode-highlight/vscode-highlight-regexes.json"
+    ],
+    "exclude": [
+        "../node_modules",
+        "../old-src",
+        "../dist",
+        "./**/test/*.ts",
+        "./test",
+        "./other-methods",
+        "./**/test/**/*.ts",
+        "./test",
+        "./testRegexes.ts",
+        "./testSet.ts"
+    ],
+    "ts-node": {
+        "files": true,
+        "preferTsExts": true,
+        "transpileOnly": true,
+        "logError": true,
+
+        "compilerOptions": 
+        {
+            "module": "commonjs",
+            "target": "es2019",
+            "declaration": true,
+            "removeComments": true,
+            "emitDecoratorMetadata": true,
+            "experimentalDecorators": true,
+            "esModuleInterop": true,
+            "sourceMap": true,
+            "outDir": "./dist"
+        }
+    }
+}
